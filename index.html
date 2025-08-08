@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RAW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Research and Analysis Wing</h1>
+        
+        <label>Enter Message:</label>
+        <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+        
+        <label>Enter Key (string):</label>
+        <input type="text" id="key" placeholder="e.g. BRAVO">
+        
+        <div class="buttons">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+            <button onclick="resetFields()">Reset</button>
+        </div>
+        
+        <h3>Result:</h3>
+        <div id="result" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
